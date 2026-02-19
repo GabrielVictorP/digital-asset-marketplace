@@ -17,6 +17,18 @@ The platform eliminates bottlenecks in manual operations, ensuring **instant ful
 
 ---
 
+## 🚀 Production Status & Demo
+
+This system is currently in **active production**, processing real-world transactions. 
+
+For security, commercial privacy, and protection of the client's business logic:
+- The **Production URL** is private and not listed in this repository.
+- This repository serves as a **Sanitized Portfolio Version**, showcasing the architecture and engineering patterns used in the live environment.
+
+**Looking for a Live Demo?** If you are a recruiter or a technical lead and would like a guided walkthrough of the production environment (via screen share), please [send me a message on LinkedIn](https://www.linkedin.com/in/gabriel-victor-a27570260/) or open an issue with the "Technical Review" label.
+
+---
+
 ## 🎯 The Problem & Solution
 
 ### 🛑 The Challenge: "Success Disaster"
