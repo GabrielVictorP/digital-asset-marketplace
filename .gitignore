@@ -1,0 +1,59 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment variables - NUNCA commitar chaves reais!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.prod
+.env.production
+
+# Arquivos sensíveis
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Debug/test files
+debug-*.js
+test-*.js
+test-*.html
+test-*.ps1
+investigate-*.js
+setup-*.js
+simulate-*.js
+trigger-*.js
+verificar-*.js
+verify-*.cjs
+
+# Temporary files
+*.tmp
+*.temp
+migrate-*.ps1
+fix-*.js
+discover-*.js
+oauth-helper.*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

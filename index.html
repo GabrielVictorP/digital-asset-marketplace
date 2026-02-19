@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
+
+  <title>Digital Asset Marketplace - Secure Gaming Items</title>
+
+  <meta name="description" content="Secure platform for buying and selling digital gaming assets. Automated delivery, secure payments, and 24/7 support for MMORPG and mobile game items." />
+
+  <meta name="keywords" content="gaming assets, digital marketplace, virtual currency, mmo items, secure trading, game accounts, instant delivery" />
+
+  <meta name="author" content="Marketplace Admin" />
+
+  <link rel="icon" type="image/png" href="/logo.png" />
+
+  <meta property="og:title" content="Digital Asset Marketplace" />
+  <meta property="og:description" content="The secure platform for trading digital gaming assets with instant fulfillment." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:image" content="https://your-domain.com/logo.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Digital Asset Marketplace" />
+  <meta name="twitter:description" content="Secure platform for trading digital gaming assets with instant fulfillment." />
+  <meta name="twitter:image" content="https://your-domain.com/logo.png" />
+
+  <script src="/security-interceptor.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Digital Marketplace",
+    "url": "https://your-domain.com",
+    "logo": "https://your-domain.com/logo.png",
+    "description": "Enterprise-grade marketplace for digital assets.",
+    "openingHours": "Mo-Su 00:00-23:59",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "support@example.com"
+    }
+  }
+  </script>
+</head>
+
+<body class="notranslate">
+  <div id="root"></div>
+  <script>
+    // Add loading indicator
+    if (!document.getElementById('loading-indicator')) {
+      const loading = document.createElement('div');
+      // Simple generic loading style could be added here if needed
+      document.body.appendChild(loading);
+
+      // Remove after 3 seconds
+      setTimeout(() => {
+        const indicator = document.getElementById('loading-indicator');
+        if (indicator) indicator.remove();
+      }, 3000);
+    }
+  </script>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

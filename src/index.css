@@ -1,0 +1,146 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 12%; /* Lighter dark background */
+    --foreground: 210 40% 98%;
+
+    --card: 0 0% 12%; /* Dark card background */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 0 74% 42%; /* Red primary */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 0 78% 36%; /* Darker red */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 45 93% 47%; /* Amber/Gold */
+    --accent-foreground: 0 0% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 0 74% 42%;
+
+    --radius: 0.5rem;
+    
+    /* Sidebar styling */
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 0 74% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 74% 42%;
+    
+    /* Class-specific colors for Rucoy */
+    --pally-primary: 120 60% 45%; /* Green for Pally */
+    --pally-light: 120 60% 55%;
+    --pally-dark: 120 60% 35%;
+    --pally-bg: 120 60% 15%;
+    
+    --kina-primary: 220 70% 50%; /* Blue for Kina */
+    --kina-light: 220 70% 60%;
+    --kina-dark: 220 70% 40%;
+    --kina-bg: 220 70% 15%;
+      --mage-primary: 270 60% 55%; /* Purple for Mage */
+    --mage-light: 270 60% 65%;
+    --mage-dark: 270 60% 45%;
+    --mage-bg: 270 60% 15%;
+    
+    --itens-primary: 25 85% 55%; /* Orange for Itens */
+    --itens-light: 25 85% 65%;
+    --itens-dark: 25 85% 45%;
+    --itens-bg: 25 85% 15%;
+    
+    --geral-primary: 320 60% 60%; /* Pink for Geral */
+    --geral-light: 320 60% 70%;
+    --geral-dark: 320 60% 50%;
+    --geral-bg: 320 60% 15%;
+    
+    --divulgacoes-primary: 45 100% 50%; /* Gold for Divulgações */
+    --divulgacoes-light: 45 100% 60%;
+    --divulgacoes-dark: 45 100% 40%;
+    --divulgacoes-bg: 45 100% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Custom utility classes */
+  .price-tag {
+    @apply px-2 py-1 rounded-md text-sm font-semibold inline-block;
+  }
+  .price-rl {
+    @apply bg-gaming-primary/20 text-red-400 price-tag;
+  }
+  
+  .price-parcelado {
+    @apply bg-blue-600/20 text-blue-400 price-tag;
+  }
+  
+  .price-kks {
+    @apply bg-gaming-accent/20 text-amber-400 price-tag;
+  }
+  
+  .tab-button {
+    @apply px-4 py-2 font-medium transition-colors duration-200 hover:bg-gaming-primary/10;
+  }
+  
+  .tab-button.active {
+    @apply bg-gaming-primary/20 text-gaming-primary border-b-2 border-gaming-primary;
+  }
+    .whatsapp-button {
+    @apply bg-gaming-accent hover:bg-gaming-accent/80 text-gaming-background px-4 py-2 rounded-md flex items-center justify-center gap-2 transition-colors duration-200 font-semibold;
+  }
+  
+  /* Class-specific utility classes */
+  .pally-primary { color: hsl(var(--pally-primary)); }
+  .pally-bg { background-color: hsl(var(--pally-bg)); }
+  .pally-border { border-color: hsl(var(--pally-primary)); }
+  .pally-tag { background-color: hsl(var(--pally-bg)); color: hsl(var(--pally-light)); }
+  
+  .kina-primary { color: hsl(var(--kina-primary)); }
+  .kina-bg { background-color: hsl(var(--kina-bg)); }
+  .kina-border { border-color: hsl(var(--kina-primary)); }
+  .kina-tag { background-color: hsl(var(--kina-bg)); color: hsl(var(--kina-light)); }
+    .mage-primary { color: hsl(var(--mage-primary)); }
+  .mage-bg { background-color: hsl(var(--mage-bg)); }
+  .mage-border { border-color: hsl(var(--mage-primary)); }
+  .mage-tag { background-color: hsl(var(--mage-bg)); color: hsl(var(--mage-light)); }
+  
+  .itens-primary { color: hsl(var(--itens-primary)); }
+  .itens-bg { background-color: hsl(var(--itens-bg)); }
+  .itens-border { border-color: hsl(var(--itens-primary)); }
+  .itens-tag { background-color: hsl(var(--itens-bg)); color: hsl(var(--itens-light)); }
+  
+  .geral-primary { color: hsl(var(--geral-primary)); }
+  .geral-bg { background-color: hsl(var(--geral-bg)); }
+  .geral-border { border-color: hsl(var(--geral-primary)); }
+  .geral-tag { background-color: hsl(var(--geral-bg)); color: hsl(var(--geral-light)); }
+  
+  .divulgacoes-primary { color: hsl(var(--divulgacoes-primary)); }
+  .divulgacoes-bg { background-color: hsl(var(--divulgacoes-bg)); }
+  .divulgacoes-border { border-color: hsl(var(--divulgacoes-primary)); }
+  .divulgacoes-tag { background-color: hsl(var(--divulgacoes-bg)); color: hsl(var(--divulgacoes-light)); }
+}

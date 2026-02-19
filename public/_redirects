@@ -1,0 +1,38 @@
+# Specific routes for React Router - SPA Fallback
+# Auth routes
+/auth/admin /index.html 200
+/auth/login /index.html 200
+/auth/* /index.html 200
+
+# User routes
+/user/dashboard /index.html 200
+/account/settings /index.html 200
+/email-confirmation /index.html 200
+
+# Admin routes
+/create /index.html 200
+/edit/* /index.html 200
+/delete /index.html 200
+/profitable /index.html 200
+/admin-management /index.html 200
+/admin/items /index.html 200
+/sales /index.html 200
+/kks /index.html 200
+
+# Category routes
+/kina /index.html 200
+/mage /index.html 200
+/pally /index.html 200
+/geral /index.html 200
+/supercell /index.html 200
+/freefire /index.html 200
+/itens /index.html 200
+/outros /index.html 200
+/promocoes /index.html 200
+/category/* /index.html 200
+
+# Checkout routes
+/checkout/* /index.html 200
+
+# Fallback for all other routes - MUST BE LAST
+/* /index.html 200
